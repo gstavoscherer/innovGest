@@ -1,19 +1,25 @@
 @charset "UTF-8";
 
-body{
+body {
     margin: 0px;
 }
 
-header{
+header {
     width: 100%;
     display: flex;
     height: 90px;
     justify-content: space-between;
 }
-header > #div01header >nav{ 
+
+header>#div01header {
+    min-width: 33vw;
+}
+
+header>#div01header>nav {
     background-color: transparent;
 }
-header > #div01header >nav>a>img{
+
+header>#div01header>nav>a>img {
     height: auto;
     width: auto;
     max-width: 126px;
@@ -21,18 +27,21 @@ header > #div01header >nav>a>img{
     max-height: 90px;
     min-height: 90px;
 }
-header > #div02header{
-    width: 700px;
+
+header>#div02header {
+    min-width: 34vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 90px;
 }
-header > #div02header > div{
+
+header>#div02header>div {
     display: flex;
     justify-content: center;
 }
-header > #div02header > div > h1 {
+
+header>#div02header>div>h1 {
     font-size: 20px;
     color: #495564;
     text-decoration: none;
@@ -42,39 +51,124 @@ header > #div02header > div > h1 {
     margin: 0px 10px 0px 10px;
 }
 
-header > div#div03header {
+header>div#div03header {
+    min-width: 33vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-header > div#div03header > a > img{
+
+
+#configImg {
     cursor: pointer;
     margin-right: 15px;
     height: 40px;
 }
-main > div#container{
-    background-image: url(../imagens/barbeiro.jpg);
+
+#botaoDiv3 {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+#imgUser {
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 15px;
+    height: 40px;
+}
+
+main>div#container {
+    background-image: url(imagens/barbeiro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: fit-content;
+    padding-bottom: 10vh;
+}
+
+main>div#container>div#aba {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+
+}
+
+main>div#container>div#aba>div#abasup01 {
+    height: auto;
+    width: auto;
+    width: 33vw;
+    height: fit-content;
+}
+
+main>div#container>div#aba>div#abasup02 {
+    width: 34vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+}
+
+main>div#container>div#aba>div#abareal {
+    background-color: white;
+    width: 146px;
+    height: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.4s;
+
+}
+
+main>div#container>div#aba>div#abareal>a {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+main>div#container>div#aba>div#abareal>a#pabareal01 {
+    text-decoration: none;
+    color: transparent;
+}
+
+main>div#container>div#aba>div#abareal>a#pabareal02 {
+    color: transparent;
+    text-decoration: none;
+}
+
+main>div#container>div#aba>div#abareal>img {
+    cursor: pointer;
+    margin-top: 8px;
+    width: 0px;
+}
+
+.foraLogin {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-main > div#container > div#login{
+
+#login {
+    border-radius: 20px;
+    background-color: #ffffff5b;
+    width: 500px;
+    height: 750px;
     color: white;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
-main > div#container > div#login > div#loginEmail{
+
+#loginNome {
     border: 2px rgb(197, 197, 197) solid;
     background-color: rgb(235, 233, 233);
     border-radius: 15px;
     width: 304px;
+    margin-bottom: 25px;
 }
-main > div#container > div#login > div#loginEmail > input{
+
+#loginNome>input {
     background-color: transparent;
     border: none;
     width: 290px;
@@ -82,18 +176,63 @@ main > div#container > div#login > div#loginEmail > input{
     height: 50px;
     font-size: 15px;
 }
-main > div#container > div#login > div#loginEmail > input:focus{
+
+#loginNome>input:focus {
     outline: none;
 }
-main > div#container > div#login > #loginEntrar {
+
+#loginTelefone {
+    border: 2px rgb(197, 197, 197) solid;
+    background-color: rgb(235, 233, 233);
+    border-radius: 15px;
+    width: 304px;
+    margin-bottom: 25px;
+}
+
+#loginTelefone>input {
+    background-color: transparent;
+    border: none;
+    width: 290px;
+    margin-left: 10px;
+    height: 50px;
+    font-size: 15px;
+}
+
+#loginTelefone>input:focus {
+    outline: none;
+}
+
+#loginEmail {
+    border: 2px rgb(197, 197, 197) solid;
+    background-color: rgb(235, 233, 233);
+    border-radius: 15px;
+    width: 304px;
+}
+
+#loginEmail>input {
+    background-color: transparent;
+    border: none;
+    width: 290px;
+    margin-left: 10px;
+    height: 50px;
+    font-size: 15px;
+}
+
+#loginEmail>input:focus {
+    outline: none;
+}
+
+#login>#loginEntrar {
     margin: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-main > div#container > div#login > #loginEntrar > img {
+
+#loginEntrar>img {
     max-width: 180px;
     max-height: 180px;
 }
-main > div#container > div#login > #loginPassbox {
+
+#loginPassbox {
     border: 2px rgb(197, 197, 197) solid;
     background-color: rgb(235, 233, 233);
     border-radius: 15px;
@@ -103,17 +242,20 @@ main > div#container > div#login > #loginPassbox {
     align-items: center;
     justify-content: space-between;
 }
-main > div#container > div#login > div#loginPassbox > input {
+
+#loginPassbox>input {
     margin-left: 10px;
     background-color: transparent;
     border: none;
     height: 50px;
     font-size: 15px;
 }
-#loginSenha{
+
+#loginSenha {
     outline: none;
 }
-#loginForgotPassword{
+
+#loginForgotPassword {
     font-size: 13px;
     width: 100px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -124,10 +266,12 @@ main > div#container > div#login > div#loginPassbox > input {
     color: rgb(146, 146, 146);
     margin-right: -15px;
 }
-#loginForgotPassword:hover{
+
+#loginForgotPassword:hover {
     color: rgb(78, 78, 78);
 }
-main > div#container > div#login > div#loginEntrar > button {
+
+#loginEntrar>button {
     margin-top: -10px;
     cursor: pointer;
     font-weight: bolder;
@@ -140,11 +284,13 @@ main > div#container > div#login > div#loginEntrar > button {
     width: 308px;
     height: 56px;
 }
-main > div#container > div#login > div#loginEntrar > button:hover{
+
+#loginEntrar>button:hover {
     background-color: #5e6f83;
     border: 3px #5e6f83 solid;
     box-shadow: 0 4px #586779;
 }
+
 footer {
     width: 100%;
     height: 190px;
@@ -152,45 +298,189 @@ footer {
     background-color: white;
     flex-direction: column;
 }
-footer > #div01footer {
+
+footer>#div01footer {
     display: flex;
     justify-content: center;
     background-color: rgb(219, 218, 218);
 }
-footer > #div01footer > div {
+
+footer>#div01footer>div {
     display: flex;
     align-items: center;
     height: 50px;
 }
-footer > #div01footer > div > a {
+
+footer>#div01footer>div>a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     text-decoration: none;
     color: black;
 }
-footer > #div02footer {
+
+footer>#div02footer {
     display: flex;
     justify-content: center;
     margin: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    
+
 }
-footer > #div03footer {
+
+footer>#div03footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-footer > #div03footer > p {
+
+footer>#div03footer>p {
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
 }
-footer > #div03footer > img {
+
+footer>#div03footer>img {
     max-width: 140px;
     margin-left: 20px;
 }
 
+/* A partir daqui, responsividade para dispositivos menores */
 
-
-
+@media screen and (max-width: 600px) {
+    #login {
+        border-radius: 20px;
+        background-color: #ffffff5b;
+        width: 350px;
+        height: 600px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #loginNome {
+        border: 2px rgb(197, 197, 197) solid;
+        background-color: rgb(235, 233, 233);
+        border-radius: 15px;
+        width: 270px;
+        margin-bottom: 25px;
+    }
+    
+    #loginNome>input {
+        background-color: transparent;
+        border: none;
+        width: 250px;
+        margin-left: 10px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    #loginNome>input:focus {
+        outline: none;
+    }
+    
+    #loginTelefone {
+        border: 2px rgb(197, 197, 197) solid;
+        background-color: rgb(235, 233, 233);
+        border-radius: 15px;
+        width: 270px;
+        margin-bottom: 25px;
+    }
+    
+    #loginTelefone>input {
+        background-color: transparent;
+        border: none;
+        width: 250px;
+        margin-left: 10px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    #loginTelefone>input:focus {
+        outline: none;
+    }
+    
+    #loginEmail {
+        border: 2px rgb(197, 197, 197) solid;
+        background-color: rgb(235, 233, 233);
+        border-radius: 15px;
+        width: 270px;
+    }
+    
+    #loginEmail>input {
+        background-color: transparent;
+        border: none;
+        width: 250px;
+        margin-left: 10px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    #loginEmail>input:focus {
+        outline: none;
+    }
+    
+    #login>#loginEntrar {
+        margin: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #loginEntrar>img {
+        width: 125px;
+        height: 125px;
+    }
+    
+    #loginPassbox {
+        border: 2px rgb(197, 197, 197) solid;
+        background-color: rgb(235, 233, 233);
+        border-radius: 15px;
+        width: 270px;
+        margin: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #loginPassbox>input {
+        margin-left: 10px;
+        background-color: transparent;
+        border: none;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    #loginSenha {
+        outline: none;
+    }
+    
+    #loginForgotPassword {
+        font-size: 13px;
+        width: 100px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-decoration: none;
+        background-color: transparent;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: rgb(146, 146, 146);
+        margin-right: -15px;
+    }
+    
+    #loginForgotPassword:hover {
+        color: rgb(78, 78, 78);
+    }
+    
+    #loginEntrar>button {
+        margin-top: -15px;
+        cursor: pointer;
+        font-weight: bolder;
+        box-shadow: 0 4px #333b46;
+        text-transform: uppercase;
+        color: white;
+        background-color: #495564;
+        border: 2px #495564 solid;
+        border-radius: 15px;
+        width: 270px;
+        height: 56px;
+    }
+}

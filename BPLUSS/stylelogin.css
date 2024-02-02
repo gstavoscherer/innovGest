@@ -64,7 +64,7 @@ header > div#div03header > button > img{
     height: 40px;
 }
 main > div#container{
-    background-image: url(../imagens/barbeiro.jpg);
+    background-image: url(imagens/barbeiro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
